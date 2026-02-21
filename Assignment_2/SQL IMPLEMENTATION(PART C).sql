@@ -1,17 +1,17 @@
 -- Creating Department Table
 CREATE TABLE Department (
     Department_ID INT PRIMARY KEY,
-    Department_Name VARCHAR(20),
-    Office_Location VARCHAR(20)
+    Department_Name VARCHAR(100),
+    Office_Location VARCHAR(50)
 );
 
 -- Creating Student Table
 CREATE TABLE Student (
     Student_ID INT PRIMARY KEY,
-    Name VARCHAR(20),
+    Name VARCHAR(100),
     Date_of_Birth DATE,
-    Gender VARCHAR(10),
-    Contact_Number VARCHAR(10),
+    Gender VARCHAR(20),
+    Contact_Number VARCHAR(15),
     Department_ID INT,
     FOREIGN KEY (Department_ID)
         REFERENCES Department(Department_ID)
@@ -20,9 +20,9 @@ CREATE TABLE Student (
 -- Creating Faculty Table
 CREATE TABLE Faculty (
     Faculty_ID INT PRIMARY KEY,
-    Name VARCHAR(20),
-    Designation VARCHAR(20),
-    Email VARCHAR(20),
+    Name VARCHAR(100),
+    Designation VARCHAR(100),
+    Email VARCHAR(50),
     Department_ID INT,
     FOREIGN KEY (Department_ID)
         REFERENCES Department(Department_ID)
@@ -31,7 +31,7 @@ CREATE TABLE Faculty (
 -- Creating Course Table
 CREATE TABLE Course (
     Course_ID INT PRIMARY KEY,
-    Course_Name VARCHAR(20),
+    Course_Name VARCHAR(100),
     Credits INT,
     Department_ID INT,
     Faculty_ID INT,
@@ -52,4 +52,5 @@ CREATE TABLE Enrollment (
         REFERENCES Student(Student_ID),
     FOREIGN KEY (Course_ID)
         REFERENCES Course(Course_ID)
+
 );
