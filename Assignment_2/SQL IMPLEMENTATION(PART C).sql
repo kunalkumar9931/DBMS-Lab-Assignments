@@ -2,7 +2,7 @@
 CREATE TABLE Department (
     Department_ID INT PRIMARY KEY,
     Department_Name VARCHAR2(100) NOT NULL,
-    OfficeLocation VARCHAR2(50)
+    Office_Location VARCHAR2(50)
 );
 
 -- Creating Table Student
@@ -60,4 +60,5 @@ CREATE TABLE Enrollment (
         FOREIGN KEY (Course_ID)
         REFERENCES Course(Course_ID)
 );
+
 
