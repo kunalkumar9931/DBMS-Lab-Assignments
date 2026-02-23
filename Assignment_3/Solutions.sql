@@ -37,7 +37,7 @@
  INSERT INTO Faculty VALUES(909,'Prof. Manisha Kumari Singh','Associate Professor','manisha.ks241@gmail.com',107);
  INSERT INTO Faculty VALUES(910,'Prof. Md. Izhar','Associate Professor','mdizhar1996@gmail.com',107);
 
---Entering Data into Faculty
+--Entering Data into Course
 
  INSERT INTO Course VALUES(105501,'Artificial Intellegence',3.00,105,906);
  INSERT INTO Course VALUES(105502,'Database Management System',3.00,105,907);
@@ -62,3 +62,4 @@
  INSERT INTO Enrollment VALUES(23157128023,105503,'5th','A');
  INSERT INTO Enrollment VALUES(23157128041,105502,'5th','A');
  INSERT INTO Enrollment VALUES(23157128048,105503,'5th','A');
+
